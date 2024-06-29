@@ -73,3 +73,77 @@ function lessThanOrEqualToZero(number) {
 console.log(lessThanOrEqualToZero(3))
 console.log(lessThanOrEqualToZero(0))
 console.log(lessThanOrEqualToZero(-2))
+
+function oppositeBoolean(bool) {
+    return !bool;
+}
+
+console.log(oppositeBoolean(true))
+console.log(oppositeBoolean(false))
+
+function isNotZero(element) {
+    return element !== 0
+}
+
+console.log (isNotZero(5))
+console.log (isNotZero(0))
+console.log (isNotZero('null'))
+
+function calcRemainder(num1, num2) {
+    return num1 % num2;
+}
+
+console.log(calcRemainder(4,2))
+console.log(calcRemainder(7,8))
+console.log(calcRemainder(9,8))
+
+function isOdd(number) {
+    return number % 2 !== 0
+}
+
+console.log(isOdd(1))
+console.log(isOdd(2))
+console.log(isOdd(3))
+
+// function booleanInterger(number) {
+//     if (number/2 === 1) {
+//         return -1
+//     }
+//     else {
+//         return 1
+//     }
+// }
+
+// function booleanInterger(number) {
+//     if (number % 2 === 0) {
+//         return 1
+//     }
+//     else {
+//         return -1
+//     }
+// }
+
+function booleanInterger(number) {
+    return number % 2 === 0 ? 1: -1;
+}
+
+console.log(booleanInterger(1))
+console.log(booleanInterger(2))
+console.log(booleanInterger(5))
+
+function isLoggedInAndSubscribed(log, sub) {
+    return (log === 'LOGGED_IN' && sub === 'SUBSCRIBED')
+}
+
+console.log(isLoggedInAndSubscribed('LOGGED_IN', 'SUBSCRIBED'))
+console.log(isLoggedInAndSubscribed('LOGGED_IN', 'UNSUBSCRIBED'))
+console.log(isLoggedInAndSubscribed('LOGGED_OUT', 'SUBSCRIBED'))
+
+function isLoggedInAndSubscribed(log, sub) {
+    return (log === 'LOGGED_IN' || sub === 'SUBSCRIBED')
+}
+
+console.log(isLoggedInAndSubscribed('LOGGED_IN', 'SUBSCRIBED'))
+console.log(isLoggedInAndSubscribed('LOGGED_IN', 'UNSUBSCRIBED'))
+console.log(isLoggedInAndSubscribed('LOGGED_OUT', 'SUBSCRIBED'))
+console.log(isLoggedInAndSubscribed('LOGGED_OUT', 'UNSUBSCRIBED'))
